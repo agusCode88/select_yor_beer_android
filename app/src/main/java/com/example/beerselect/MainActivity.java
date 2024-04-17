@@ -16,11 +16,9 @@ import com.example.beerselect.provider.BeerExpert;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-
     TextView brands;
     Spinner typeBeer;
     Button findBeer;
-
     BeerExpert beerExpert  = new BeerExpert();
 
     @Override
@@ -43,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
             for( String type : typesOfBeerList){
                 typeFormatted.append(type).append("\n");
             }
-
             brands.setText(typeFormatted);
         });
 
