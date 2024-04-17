@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/app_title_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/fuente_alkemy"
+        android:text="@string/select_your_beer"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imagen_app"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/app_title_txt"
+        android:background="@drawable/beer_photo_app"/>
+
+
+    <Spinner
+        android:id="@+id/selector_beeer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagen_app"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:entries="@array/beer_types"
+        />
+
+    <Button
+        android:id="@+id/btn_find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Beer"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/selector_beeer"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/reult_find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brand"
+        android:textSize="24sp"
+        android:fontFamily="@font/fuente_alkemy"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/red"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_find"/>
+
+</RelativeLayout>

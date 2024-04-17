@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BeerSelect</string>
+    <string name="select_your_beer">SELECT YOUR BEER</string>
+    <string-array name="beer_types">
+        <item>light</item>
+        <item>amber</item>
+        <item>brown</item>
+        <item>dark</item>
+    </string-array>
+</resources>
