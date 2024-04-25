@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imagen_avatar"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="16dp"
+        tool:src="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/edt_name_beer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imagen_avatar"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="16dp"
+        android:hint="Nombre Cerveza"/>
+
+    <EditText
+
+        android:layout_toEndOf="@id/imagen_avatar"
+        android:id="@+id/edt_brand_beer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_name_beer"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Nombre Cerveza"/>
+
+    <View
+        android:id="@+id/separacion"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/imagen_avatar"/>
+
+    <TextView
+        android:id="@+id/txt_briografia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/separacion"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/fuente_alkemy"
+        android:text="BIOGRAFÍA"/>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        android:layout_below="@+id/txt_briografia">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:boxBackgroundMode="none"/>
+
+        <EditText
+            android:id="@+id/campo_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="top|start"
+            android:hint="Acá está el EditText"
+            android:inputType="text"
+            android:lines="16"
+            android:overScrollMode="ifContentScrolls"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:singleLine="true" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/txt_valoracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="VALORACIÓN"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:layout_below="@id/cardView"
+        android:textSize="24sp"/>
+
+
+    <RatingBar
+        android:layout_below="@id/txt_valoracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:numStars="8"
+        android:progressTint="@color/red"
+        />
+
+
+</RelativeLayout>

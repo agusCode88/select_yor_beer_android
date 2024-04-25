@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">BeerSelect</string>
     <string name="select_your_beer">SELECT YOUR BEER</string>
+    <string name="description_detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a varius ligula. Integer pretium tincidunt egestas. Donec venenatis augue sit amet ex interdum, egestas rutrum libero malesuada. Nam vitae tellus id elit eleifend mattis sed id tortor. Ut quis egestas dolor, vitae scelerisque risus. Quisque maximus nibh vitae pharetra condimentum.</string>
     <string-array name="beer_types">
         <item>light</item>
         <item>amber</item>

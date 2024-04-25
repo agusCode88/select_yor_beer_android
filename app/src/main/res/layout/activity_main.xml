@@ -57,4 +57,29 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/btn_find"/>
 
+    <LinearLayout
+        android:id="@+id/contenedor_botones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reult_find"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Presona Aquí"
+        android:layout_gravity="center" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Botón 2 "
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
 </RelativeLayout>
